@@ -1643,10 +1643,12 @@ header.scrolled .logo img {
     padding: 40px 20px;
   }
   .tenants-logo-row {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
     gap: 20px;
-    justify-content: space-between;
     margin-top: 15px;
+    justify-items: center;
+    align-items: center;
   }
   .tenants-logo-row img {
     height: 40px;
@@ -1810,8 +1812,22 @@ header.scrolled .logo img {
     width: 100%;
   }
   .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px 20px;
-    margin: 40px 15px;
+    margin: 50px 20px; /* kurangi margin kiri-kanan */
+    border: 2px solid #e8e8e8; /* border lebih tebal di mobile */
+    border-radius: 4px;
+  }
+
+  .form-section button {
+    width: 280px;
+    padding: 14px 20px;
+  }
+  .input-box input,
+  .input-box select {
+    width: 100%;
   }
   .benefit-section {
     flex-direction: column;
