@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FontDale Lifestyle Mall</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alike&family=Inter:wght@300;400;600&family=Italianno&family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="coloring.css" />
+    <script src="/JS/scroll.js" defer></script>
+    <script src="JS/nav.js" defer></script>
+    <script src="JS/popup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="./Gambar/logo fontDale.png" alt="logo" width="160px" />
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="directory.html">DIRECTORY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="ourstory.html">OURSTORY</a></li>
+          <li><a href="newsletter.html">NEWSLETTER</a></li>
+        </ul>
+      </nav>
+      <button id="hamburgerButton" class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <section class="events-hero-banner">
+      <article class="desc-event-hero-banner">
+        <p>NOW HAPPENING · MAIN ATRIUM</p>
+        <h1>Exotic Animal <br />Showcase</h1>
+        <p id="desc-event-hero-banner">
+          Discover rare and magnificent creatures from around the world —
+          curated with care, presented in luxury.
+        </p>
+        <div class="button-event-group">
+          <button class="btn-primary" id="open-modal">EXPLORE THE EVENT</button>
+          <button class="btn-secondary">GET DIRECTIONS</button>
+        </div>
+      </article>
+    </section>
+
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-box">
+        <div class="modal-hero-img">
+          <div class="modal-hero-text">
+            <p class="modal-eyebrow">NOW HAPPENING</p>
+            <h2>Exotic Animal Showcase</h2>
+          </div>
+
+          <button class="modal-close" id="close-modal">X</button>
+        </div>
+
+        <section class="modal-body">
+          <div class="modal-grid">
+            <div class="info-item">
+              <p class="info-label">DATE</p>
+              <p class="info-val">12 Mar - 20 Apr 2025</p>
+            </div>
+            <div class="info-item">
+              <p class="info-label">TIME</p>
+              <p class="info-val">10:00 AM - 10:00 PM</p>
+            </div>
+            <div class="info-item">
+              <p class="info-label">LOCATION</p>
+              <p class="info-val">Main Atrium, Level 1</p>
+            </div>
+            <div class="info-item">
+              <p class="info-label">ADMISSION</p>
+              <p class="info-val">Free Entry</p>
+            </div>
+          </div>
+        </section>
+
+        <p class="modal-desc">
+          Step into an extraordinary world where rare and exotic creatures from
+          across the globe come alive at FontDale. Marvel at vibrant Scarlet
+          Macaws, playful Ring-tailed Lemurs, and more - all curated with care
+          and presented in luxury.
+        </p>
+
+        <div class="modal-highlights">
+          <p class="modal-highlights-label">HIGHLIGHTS</p>
+          <div class="modal-tags">
+            <span>Macaw Aviary</span>
+            <span>Lemur Habitat</span>
+            <span>Arctic Display</span>
+            <span>Expert Guides</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="coming-soon-events">
+      <h1>UPCOMING EVENTS</h1>
+      <div class="event-wrapper-section">
+        <article class="event-column1">
+          <div class="event-square-column fade-up">
+            <div class="event-card-content">
+              <h3>Fall/Winter Exclusive Trunk Show</h3>
+              <p>
+                Be the first to witness the unveiling of the newest leather
+                goods collection. Enjoy an intimate viewing experience curated
+                exclusively for FontDale VIPs.
+              </p>
+              <span>20 - 25 Feb 2026 | North Gallery, GF</span>
+            </div>
+          </div>
+          <div class="event-rectangle-column fade-up">
+            <div class="event-card-content">
+              <h3>The Art of Scent: Floral Masterclass</h3>
+              <p>
+                Discover your signature scent in this interactive masterclass.
+                Learn the art of fragrance combining from our expert stylists.
+              </p>
+              <span>28 Feb 2026 | North Gallery, L1</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-column2">
+          <div class="event-rectangle-column fade-up">
+            <div class="event-card-content">
+              <h3>The Art of Mandal Brew</h3>
+              <p>
+                An exclusive sensory journey into the world of rare coffee
+                beans. Join our Master Baristas for an intimate session of
+                precision brewing and coffee tasting.
+              </p>
+              <span>12 - 14 March 2026 | South Pavilion, L2</span>
+            </div>
+          </div>
+          <div class="event-square-column fade-up">
+            <div class="event-card-content">
+              <h3>Artisan Pastry Bakery</h3>
+              <p>
+                A rare showcase of horological mastery. Explore the heritage and
+                precision behind our most iconic timepieces in an exclusive
+                week-long gallery event.
+              </p>
+              <span>15 - 22 March 2026 | North Gallery, GF</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-column3">
+          <div class="event-square-column fade-up">
+            <div class="event-card-content">
+              <h3>Timeless Elegance Exhibition</h3>
+              <p>
+                Explore the heritage of precision. An exclusive exhibition
+                showcasing limited-edition timepieces and masterful
+                craftsmanship.
+              </p>
+              <span>15 - 20 Mar 2026 | Arcadia Circle, GF</span>
+            </div>
+          </div>
+          <div class="event-rectangle-column fade-up">
+            <div class="event-card-content">
+              <h3>Midnight Tech Premiere</h3>
+              <p>
+                Experience the future in your hands. Join our exclusive midnight
+                launch event for the most anticipated smartphone release of the
+                year.
+              </p>
+              <span>5 Mar 2026 | South Pavilion, L2</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo-footer">
+        <a href="homePage.html">
+          <img src="./Gambar/logo fontDale2.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="navigation-footer">
+        <ul>
+          <li><a href="directory.html">DIRECTORY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="ourstory.html">OURSTORY</a></li>
+          <li><a href="newsletter.html">NEWSLETTER</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <p class="social-media-title">FOLLOW OUR <br />SOCIAL MEDIA :</p>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

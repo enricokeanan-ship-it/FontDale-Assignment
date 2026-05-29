@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FontDale Lifestyle Mall</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alike&family=Inter:wght@300;400;600&family=Italianno&family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="coloring.css" />
+    <script src="./JS/scroll.js" defer></script>
+    <script src="JS/nav.js" defer></script>
+    <script src="JS/newsletter.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="./Gambar/logo fontDale.png" alt="logo" width="160px" />
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="directory.html">DIRECTORY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="ourstory.html">OURSTORY</a></li>
+          <li><a href="newsletter.html">NEWSLETTER</a></li>
+        </ul>
+      </nav>
+      <button id="hamburgerButton" class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <section class="newsletter-hero-banner">
+      <div class="hero-banner-text fade-up">Stay Connected</div>
+    </section>
+
+    <section class="benefit-section fade-up">
+      <section class="feature-item">
+        <img
+          src="./Gambar/newsletter page/benefit-1.svg"
+          alt="gambar logo diskon"
+        />
+        <h3>Be the First to Know Deals</h3>
+        <p>
+          Get early access to exclusive promos and discounts straight to your
+          inbox.
+        </p>
+      </section>
+
+      <section class="feature-item">
+        <img
+          src="./Gambar/newsletter page/benefit-2.svg"
+          alt="gambar kalender"
+        />
+        <h3>Stay in the Loop on Events</h3>
+        <p>Never miss out on exciting happenings at FontDale.</p>
+      </section>
+
+      <section class="feature-item">
+        <img src="./Gambar/newsletter page/benefit-3.svg" alt="gambar tas" />
+        <h3>Fresh Lifestyle Inspiration</h3>
+        <p>
+          Discover the latest trends in fashion, food, and fun, all curated just
+          for you.
+        </p>
+      </section>
+    </section>
+
+    <section id="FullLine"></section>
+
+    <section class="form-section fade-left">
+      <h1>Fill The Form</h1>
+      <form method="POST" id="registration-form">
+        <div class="form-wrapper">
+          <div class="column-left">
+            <div class="input-box">
+              <label>Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                id="username"
+                name="username"
+              />
+            </div>
+            <div class="input-box">
+              <label>Email</label>
+              <input
+                type="email"
+                placeholder="Your Email"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="input-box">
+              <label>Phone</label>
+              <input
+                type="tel"
+                placeholder="Your phone number"
+                id="phonenumber"
+                name="phone"
+              />
+            </div>
+          </div>
+
+          <div class="column-right">
+            <div class="input-box">
+              <label>Topic Of Interest</label>
+              <select id="topic-of-interest" name="topic">
+                <option value="" disabled selected>Select an option</option>
+                <option value="fashion">Global Fashion & Beauty</option>
+                <option value="culinary">Dining & Culinary</option>
+                <option value="lifestyle">Lifestyle & Home Decor</option>
+                <option value="events">Events & Exhibitons</option>
+                <option value="general">All Updates (General)</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <label>Update Preferences</label>
+              <select id="update-preferences" name="preference">
+                <option value="" disabled selected>Select an option</option>
+                <option value="weekly">Weekly Highlights</option>
+                <option value="monthly">Monthly Digest</option>
+                <option value="event-only">Event-Only Notification</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button type="button" class="submit-btn" onclick="validateData()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="logo-footer">
+        <a href="homePage.html">
+          <img src="./Gambar/logo fontDale2.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="navigation-footer">
+        <ul>
+          <li><a href="directory.html">DIRECTORY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="ourstory.html">OURSTORY</a></li>
+          <li><a href="newsletter.html">NEWSLETTER</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <p class="social-media-title">FOLLOW OUR <br />SOCIAL MEDIA :</p>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
